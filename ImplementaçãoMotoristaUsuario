@@ -1,0 +1,138 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package atividade1;
+
+/**
+ *
+ * @author Gabriel Freitas
+ */
+
+public class Cliente {
+    
+    public int cpf;
+    public String nome;
+    public int contato;
+    public Local endereco;
+
+    public int getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(int cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getContato() {
+        return contato;
+    }
+
+    public void setContato(int contato) {
+        this.contato = contato;
+    }
+
+    public Local getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Local endereco) {
+        this.endereco = endereco;
+    }
+
+    public boolean formaPagamento(){
+        return false;    
+    }
+    
+    public motorista pedirCorrida(){
+        return motorista;        
+    }
+
+    public void cancelarCorrida(){
+        System.out.print("Corrida cancelada");
+    }
+    
+    public Local origen(Local endereco){
+        return endereco;    
+    }
+    
+    public Local destino(Local endereco){
+        return endereco;    
+    }
+}
+
+public class Motorista {
+    
+    public String cnh;
+    public String cpf;
+    public String nome;
+    public Carro tipoCarro;
+    public boolean disponivel;
+
+    public String getCnh() {
+        return cnh;
+    }
+
+    public void setCnh(String cnh) {
+        this.cnh = cnh;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Carro getTipoCarro() {
+        return tipoCarro;
+    }
+
+    public void setTipoCarro(Carro tipoCarro) {
+        this.tipoCarro = tipoCarro;
+    }
+
+    public boolean getDisponivel() {
+        return disponivel;
+    }
+
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
+    }
+    
+    public boolean expediente(boolean disponivel){
+        return disponivel;
+    }
+    
+    public void buscarCorrida(){
+        System.out.print("Buscando corrida");
+    }
+    
+    public boolean corrida(){
+        return true;
+        // quando encerar a corrida a chave muda.
+    }
+    
+    public boolean confirmarPagamento(){
+       return true;
+       // Se não for confirmado tratar uma opção para recebimento.
+    }    
+}
