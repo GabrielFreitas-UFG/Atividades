@@ -31,7 +31,6 @@ public class Principal {
             
             System.out.println("Digite o nome: ");
             nome = input.nextLine();
-            nome = input.nextLine();
             
             System.out.println("Digite o genero: ");
             genero = input.nextLine();
@@ -40,7 +39,6 @@ public class Principal {
             ano = input.nextInt();
             
             System.out.println("Digite o autor principal: ");
-            autorPrincipal = input.nextLine();
             autorPrincipal = input.nextLine();
             
             Filme f = new Filme(codigo, nome);
